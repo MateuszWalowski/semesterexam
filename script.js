@@ -1,7 +1,7 @@
 
 
 
-
+function portfolio() {
     const gallery = "http://mawadesign.eu/wordpress/wp-json/wp/v2/gallery?_embed";
     fetch(gallery)
       .then(res => res.json())
@@ -34,4 +34,4 @@
     }
     )
 
-   }
+   }}

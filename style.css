@@ -1,0 +1,60 @@
+
+/* Resetting browser's default CSS */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    line-height: 1;
+    overflow-x: hidden;
+  }
+  
+@import url('//fonts.googleapis.com/css2?family=Inconsolata&family=Lato:wght@100;400&family=Press+Start+2P&display=swap');
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url(./PressStart2P-Regular.ttf);
+}
+
+  /* font-family: 'Inconsolata', monospace;
+font-family: 'Lato', sans-serif;
+font-family: 'Press Start 2P', cursive; */
+
+.backgroundhomepage {
+
+    height: 80vh;
+    background-image: url(./images/Fez\ \(2012\,\ Polytron\).jpg);
+    background-repeat: no-repeat;
+    background-size: auto;  
+}
+
+.navigation {
+  text-transform: uppercase;
+  padding-top: 5vh;
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+button {
+  text-transform: uppercase;
+
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 400%;
+  height: 20vh;
+  width: 100vw;
+}
+
+.logo {
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 400%;
+
+}
