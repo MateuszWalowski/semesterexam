@@ -28,6 +28,14 @@ font-family: 'Press Start 2P', cursive; */
     background-size: auto;  
 }
 
+.backgroundblog {
+
+  height: 80vh;
+  background-image: url(./images/Shovel\ Knight\(2014\,\ Yacht\ Club\ Games\).jpg);
+  background-repeat: no-repeat;
+  background-size: auto;  
+}
+
 .navigation {
   text-transform: uppercase;
   padding-top: 5vh;
@@ -41,14 +49,13 @@ font-family: 'Press Start 2P', cursive; */
 }
 button {
   text-transform: uppercase;
-
   font-family: 'Press Start 2P', cursive; 
   font-size: 400%;
   height: 20vh;
   width: 100vw;
 }
 
-.logo {
+.logohomepage {
   position: absolute;
   top: 60%;
   left:50%;
@@ -56,5 +63,44 @@ button {
   text-transform: uppercase;
   font-family: 'Press Start 2P', cursive; 
   font-size: 400%;
+  text-align: center;
+
+}
+
+.logoblog {
+  position: absolute;
+  top: 90%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 400%;
+
+}
+
+.Blog {
+  position: relative;
+  top:15vh
+}
+
+.imagegallery {
+  position: relative;
+  top: 15vh;
+
+}
+
+.hereiswheretheimagesgo
+
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+.imagegallery img {
+  max-width: 90%;
+  padding: 1em;
+  margin: auto;
+  cursor: pointer;
 
 }
