@@ -16,12 +16,17 @@ body {
   src: url(./PressStart2P-Regular.ttf);
 }
 
-  /* font-family: 'Inconsolata', monospace;
-font-family: 'Lato', sans-serif;
-font-family: 'Press Start 2P', cursive; */
+
+p,div {
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+h1,h2 {
+  font-family: 'Inconsolata', monospace;}
 
 .backgroundhomepage {
-
     height: 80vh;
     background-image: url(./images/Fez\ \(2012\,\ Polytron\).jpg);
     background-repeat: no-repeat;
@@ -29,12 +34,13 @@ font-family: 'Press Start 2P', cursive; */
 }
 
 .backgroundblog {
-
   height: 80vh;
   background-image: url(./images/Shovel\ Knight\(2014\,\ Yacht\ Club\ Games\).jpg);
   background-repeat: no-repeat;
   background-size: auto;  
 }
+
+
 
 .navigation {
   text-transform: uppercase;
@@ -43,10 +49,20 @@ font-family: 'Press Start 2P', cursive; */
   font-size: 200%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  color: white;
+  text-decoration: none;
   
-
 }
+
+a:active, a:visited{ 
+  color: white;
+}
+ .navigation a {
+  text-decoration: none;
+
+ }
+
 button {
   text-transform: uppercase;
   font-family: 'Press Start 2P', cursive; 
@@ -78,6 +94,12 @@ button {
 
 }
 
+
+
+.aboutme {
+  position: absolute;
+  top: 95%;
+  padding:1em;}
 .Blog {
   position: relative;
   top:15vh
