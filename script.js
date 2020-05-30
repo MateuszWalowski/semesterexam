@@ -1,4 +1,4 @@
-function portfolio() {
+function galleries() {
   const gallery = "http://mawadesign.eu/wordpress/wp-json/wp/v2/gallery?_embed";
   fetch(gallery)
     .then(res => res.json())
@@ -62,3 +62,37 @@ function blog()
 
   }
 }
+
+function portfolio() {
+
+
+
+
+    const gallery = " http://mawadesign.eu/wordpress/wp-json/wp/v2/portfolio_project";
+    fetch(gallery)
+      .then(res => res.json())
+      .then(handleData)
+
+    function handleData(posts) {
+      console.log(posts);
+      posts.forEach(showevent);
+
+    }
+
+    function showevent(portfolio) {
+      console.log(portfolio);
+      const template = document.querySelector(".portfolio").content;
+      const copy = template.cloneNode(true);
+      copy.querySelector(".name").textContent = portfolio.title.rendered;
+      copy.querySelector(".projectdate").textContent = portfolio.projectdate;
+      copy.querySelector(".client_name").textContent = portfolio.client_name;
+
+      copy.querySelector(".portfoliodesc").innerHTML = portfolio.content.rendered;
+      document.querySelector("main").appendChild(copy);
+
+
+    }
+  }
+
+
+
