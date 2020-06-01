@@ -1,3 +1,5 @@
+
+
 function galleries() {
   const gallery = "http://mawadesign.eu/wordpress/wp-json/wp/v2/gallery?_embed";
   fetch(gallery)
@@ -14,7 +16,8 @@ function galleries() {
     console.log(gallery);
     const template = document.querySelector(".gallery").content;
     const copy = template.cloneNode(true);
-    copy.querySelector(".name").textContent = gallery.title.rendered;
+    copy.querySelector(".galleryname").textContent = gallery.title.rendered;
+    copy.querySelector(".otherworkdescription").innerHTML = gallery.content.rendered;
 
 
     document.querySelector("main").appendChild(copy);
@@ -29,6 +32,7 @@ function galleries() {
           obj.guid, "_blank");
       }
       document.querySelector(".hereiswheretheimagesgo").appendChild(img);
+
 
     })
 
@@ -65,8 +69,6 @@ function blog()
 
 function portfolio() {
 
-
-
  
     const gallery = " http://mawadesign.eu/wordpress/wp-json/wp/v2/portfolio_project";
     fetch(gallery)
@@ -89,10 +91,21 @@ function portfolio() {
 
       copy.querySelector(".portfoliodesc").innerHTML = portfolio.content.rendered;
       document.querySelector("main").appendChild(copy);
- 
+
+
+//       var images = document.getElementsByTagName("img");
+// console.log(images)
+//       images.forEach(function (obj) {
+
+//         images.onclick = function NewTab() {
+//           console.log(images)
+
+//           window.open(
+//             images.currentSrc, "_blank");
+//         }
+  
+  
+//       })
   
     }
   }
-
-
-
