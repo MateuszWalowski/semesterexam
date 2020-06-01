@@ -88,24 +88,11 @@ function portfolio() {
       copy.querySelector(".name").textContent = portfolio.title.rendered;
       copy.querySelector(".projectdate").textContent = portfolio.projectdate;
       copy.querySelector(".client_name").textContent = portfolio.client_name;
-
       copy.querySelector(".portfoliodesc").innerHTML = portfolio.content.rendered;
+
       document.querySelector("main").appendChild(copy);
-
-
-//       var images = document.getElementsByTagName("img");
-// console.log(images)
-//       images.forEach(function (obj) {
-
-//         images.onclick = function NewTab() {
-//           console.log(images)
-
-//           window.open(
-//             images.currentSrc, "_blank");
-//         }
   
-  
-//       })
+    
   
     }
   }
