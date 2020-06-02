@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing:border-box;
   font-size: 100%;
-  line-height: 1;
+  line-height: 2;
   overflow-x: hidden;
   scroll-behavior: smooth;
 
@@ -40,15 +41,18 @@ b {
 
 .navigation a {
   font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
 
 }
 
 h1 {
   font-family: 'Inconsolata', monospace;
+  font-size: 20px;
 }
 
 h2 {
   font-family: 'Inconsolata', monospace;
+  font-size:18px;
 }
 
 /* setting background parameters - same for all pages */
@@ -121,7 +125,7 @@ h2 {
 button {
   text-transform: uppercase;
   font-family: 'Press Start 2P', cursive;
-  font-size: 300%;
+  font-size: 200%;
   height: 20vh;
   width: 100vw;
   cursor: pointer;
@@ -150,7 +154,7 @@ button {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   font-family: 'Press Start 2P', cursive;
-  font-size: 300%;
+  font-size: 200%;
 
 }
 
