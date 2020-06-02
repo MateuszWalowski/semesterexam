@@ -4,7 +4,7 @@ body {
   padding: 0;
   border: 0;
   box-sizing:border-box;
-  font-size: 100%;
+  font-size: 120%;
   line-height: 2;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -20,7 +20,7 @@ body {
 
 }
 
-/* Importing fonts from Google fonts and from file */
+/* Impostorting fonts from Google fonts and from file */
 @import url('//fonts.googleapis.com/css2?family=Inconsolata&family=Lato:wght@100;400&family=Press+Start+2P&display=swap');
 
 @font-face {
@@ -100,11 +100,8 @@ h2 {
 
 .navigation {
   text-transform: uppercase;
-  padding-top: 5vh;
-  font-size: 160%;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: white;
   text-decoration: none;
 }
@@ -158,12 +155,33 @@ button {
 
 }
 
+/* Styling Specifically for the blog */
+
+.postscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.thissetsthepositionofblog {
+    max-width: 50vw;
+    min-width: 33vw;
+    position: absolute;
+}
+
+.thissetsthepositionofblog img {
+align-items: center;
+top: 50px;
+margin: 0 auto;
+}
+
 /* Styling dynamic part of the website */
-
 .aboutme {
-
-  padding: 1em;
-  background-color: var(--background3);
+    padding: 1em;
+    background-color: var(--background3);
 }
 
 .thissetsthepositionofblog,
@@ -247,45 +265,57 @@ button {
   padding-bottom: 1vh;
   padding-left: 1vw;
   padding-right: 1vw;
-  width: 3.5em;
-  height: 3.5em;
+  width: 2em;
+  height: 2em;
 
 }
 
 /* Making fonts responsive */
 
 * {
-  font-size: calc(0.1em + 1vw);
+  /*font-size: calc(0.1em + 1vw);*/
 }
 
 /* Breakpoints */
 
 @media only screen and (max-width: 1200px) {
-  .sidebar img {
-    width: 4.5em;
-    height: 4.5em;
-  }
 
-  * {
-    font-size: calc(0.3em + 1vw);
-  }
+
+    * {
+        
+        /*font-size: calc(0.3em + 1vw);*/
+    }
+    .postscontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thissetsthepositionofblog {
+        max-width: 50vw;
+        min-width: 33VW;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
   * {
-    font-size: calc(0.4em + 1vw);
+
+    /*font-size: calc(0.4em + 1vw);*/
   }
 
-  .sidebar img {
-    width: 4em;
-    height: 4em;
-  }
 }
 
 @media only screen and (max-width: 800px) {
   * {
     font-size: calc(0.5em + 1vw);
   }
+    .postscontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .thissetsthepositionofblog {
+        max-width: 100vw;
+        min-width: 50VW;
+    }
 
   .sidebar {
     position: absolute;
@@ -301,8 +331,8 @@ button {
 
   .sidebar img {
     padding: 0vh;
-    width: 6em;
-    height: 6em;
+    width: 3em;
+    height: 3em;
   }
 
   .logohomepage {

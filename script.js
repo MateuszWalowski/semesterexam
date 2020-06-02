@@ -60,7 +60,7 @@ function blog()
     copy.querySelector(".postname").textContent = blog.title.rendered;
     copy.querySelector(".postdate").innerHTML = blog.modified;
     copy.querySelector(".posttext").innerHTML = blog.content.rendered;
-    document.querySelector("main").appendChild(copy);
+    document.querySelector("main .postscontainer").appendChild(copy);
 
 
 
