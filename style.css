@@ -172,10 +172,18 @@ button {
     position: absolute;
 }
 
+.thissetsthepositionofblog h1 {
+    font-size: 1.5em;
+}
+
+.hereiswherethepostsgo {
+    padding:10px 20px;
+
+
+}
+
 .thissetsthepositionofblog img {
-align-items: center;
-top: 50px;
-margin: 0 auto;
+    max-width: 100%;
 }
 
 /* Styling dynamic part of the website */
