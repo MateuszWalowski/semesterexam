@@ -45,6 +45,7 @@ b {
 
 h1 {
   font-family: 'Inconsolata', monospace;
+
 }
 
 h2 {
@@ -166,8 +167,9 @@ button {
 .thissetsthepositionofportfolio,
 .thissetsthepositionofgallery,
 .aboutme {
+
   position: relative;
-  top: 15vh
+  top: 15vh;
 }
 
 .imagegallery,
@@ -371,4 +373,47 @@ button {
     width: 4em;
     height: 4em;
   }
+}
+
+
+.portfoliostuff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.featuredimage img {
+  width: 100%;
+
+}
+
+.featuredimage {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+padding:0em;
+}
+
+.name {
+  font-size: 1.5em;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.portfoliogallery {
+  display: flex;
+  max-width: 25vw;
+  flex-direction: column;
+  align-self: stretch ;
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+.bigportfolio {
+  max-width: 100vw;
 }

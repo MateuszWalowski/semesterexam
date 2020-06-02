@@ -12,52 +12,106 @@
 <body onload="portfolio()">
 
   <body>
-  <header>
-    <div class="backgroundportfolio"> 
-    <div class="navigation">
-      <a href="./index.html">Homepage </a>
-        <a href="./portfolio.html" style="text-decoration: underline;">Portfolio</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./otherwork.html">Other work</a>
+    <header>
+      <div class="backgroundportfolio">
+        <div class="navigation">
+          <a href="./index.html">Homepage </a>
+          <a href="./portfolio.html" style="text-decoration: underline;">Portfolio</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./otherwork.html">Other work</a>
+          <a href="./aboutme.html">About me</a>
+        </div>
 
- 
-        <a href="./aboutme.html">About me</a>
-    </div>
-  
-    <div class="logoblog">Portfolio</div>
-  
-  </div>
-  </header>
+        <div class="logoblog">Portfolio</div>
 
-  <main> 
-    <div class="sidebar">
-      <a href="https://www.instagram.com/tesselarpixel"  target="_blank"><img src="./icons/instagram.png" alt="My Instagram" title="My Instagram"> </a>
-      <a href="https://www.fiverr.com/tesselarpixels"  target="_blank" ><img src="./icons/fiverr.png"  alt="My Fiverr" title="My Fiverr"> </a>
-      <a href="https://twitter.com/tesselarpixels"  target="_blank" ><img src="./icons/twitter.png" alt="My Twitter" title="My Twitter"> </a>
-      <a href="https://tesselarpixel.tumblr.com/"   target="_blank"><img src="./icons/tumblr.png" alt="My Tumblr" title="My Tumblr"> </a>
-      <a href="https://www.behance.net/demasiadotodoart"  target="_blank" ><img src="./icons/behance.png" alt="My Behance" title="My Behance"> </a>
-      
+      </div>
+    </header>
+
+    <main>
+      <div class="sidebar">
+        <a href="https://www.instagram.com/tesselarpixel" target="_blank"><img src="./icons/instagram.png"
+            alt="My Instagram" title="My Instagram"> </a>
+        <a href="https://www.fiverr.com/tesselarpixels" target="_blank"><img src="./icons/fiverr.png" alt="My Fiverr"
+            title="My Fiverr"> </a>
+        <a href="https://twitter.com/tesselarpixels" target="_blank"><img src="./icons/twitter.png" alt="My Twitter"
+            title="My Twitter"> </a>
+        <a href="https://tesselarpixel.tumblr.com/" target="_blank"><img src="./icons/tumblr.png" alt="My Tumblr"
+            title="My Tumblr"> </a>
+        <a href="https://www.behance.net/demasiadotodoart" target="_blank"><img src="./icons/behance.png"
+            alt="My Behance" title="My Behance"> </a>
+
       </div>
 
-<template class="portfolio">
-  <div class="thissetsthepositionofportfolio">
-<div class="portfoliogallery" >
+      <div class="portfoliostuff">
 
-  <h1 class="name"></h1>
-<h2 class="client_name"></h2>
-<h2 class="projectdate"></h2>
-<p class="portfoliodesc"></p>
-<div class="hereiswheretheimagesgo">
+        <template class="portfolio">
+
+          <div class="thissetsthepositionofportfolio">
+            <div class="portfoliogallery" 
+             >
+
+              <div class="featuredimage">
+                <h1 class="name"></h1>
+
+                <img src="">
+              </div>
+              <h2 class="client_name"></h2>
+              <h2 class="projectdate"></h2>
+              <p class="portfoliodesc"></p>
+              <div class="hereiswheretheimagesgo">
 
 
-</div></div>
+              </div>
+            </div>
 
 
+        </template>
+
+        <h1>MENU</h1>
+
+        <template id="dishTemplate">
+              <article class="course soldout sale">
+            <header>
+              <h3>NAME</h3>
+
+<!--              <div class="soldout"><h6>SOLD OUT</h6></div>-->
+
+              <img class="imageName" src="images/medium/ringbroed-druer-md.jpg"/>
+              <p class="price price-discount"><span>0</span></p>
+              <p class="price price-full"><span>0</span>$</p>
+            </header>
+            <section class="info">
+             <h4>SHORT</h4>
+
+<button><p2>READ MORE</p2></button>
+<!--                <img class="veg" src="veg.png"/>-->
+
+</section>
+</article>
 </template>
 
+        
+      </div>
 
-</main>
-  <script src="script.js"></script>
-</body>
+      
+    </main>
+    
+
+
+    
+    <div class="modal-background hide">
+      <div class="modal-content">
+        <h3 class="modal-name">NAME</h3>
+        <img src="" alt="" class="modal-image"/>
+    
+        <p class="modal-description-short">LONG DESCRIPTION</p>
+        <p class="modal-description">LONG DESCRIPTION</p>
+        <h>SOLD?<p class="modal-soldout">sold</p></h>
+        <h>VEGETARIAN?<p class="modal-vege">veg</p></h>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 
 </html>
