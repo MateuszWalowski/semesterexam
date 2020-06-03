@@ -69,9 +69,9 @@ function blog()
 
 
 const modal = document.querySelector(".modal-background");
-modal.addEventListener("click", () => {
-  modal.classList.add("hide");
-});
+// modal.addEventListener("click", () => {
+//   modal.classList.add("hide");
+// });
 
 
 
@@ -108,14 +108,25 @@ function showDetails(data) {
   modal.classList.remove("hide");
 
   modal.querySelector(".modal-name").textContent = data.title.rendered;
+  modal.querySelector(".projectdescription").innerHTML = data.content.rendered;
+
+
+  if (data.client_name) {
+    modal.querySelector(".client_name").textContent = "Client: " +  data.client_name;
+    modal.querySelector(".client_name").style.display = "block";
+
+  } else {
+    modal.querySelector(".client_name").style.display = "none";
+  }
+
 
   if (data.youtube) {
     modal.querySelector("iframe").src = data.youtube;
-    modal.querySelector("iframe").style.display = "block";
+    modal.querySelector(".youtube").style.display = "block";
     console.log("fetching " + data.youtube)
 
   } else {
-    modal.querySelector("iframe").style.display = "none";
+    modal.querySelector(".youtube").style.display = "none";
   }
 
 
@@ -145,16 +156,9 @@ function showDetails(data) {
     }
 
 
-
-    //     data = gallery.images;
-    //     data.forEach(function (obj) {
-    //       var img = document.createElement("img");
-    //       img.src = obj.guid;
-    //       img.alt = obj.post_title;
-    //       img.onclick = function NewTab() {
-    //         window.open(
-    //           obj.guid, "_blank");
-    //       }
-    //       document.querySelector(".hereiswheretheimagesgo").appendChild(img);
-
   }
+  closemodal  = document.querySelector(".closemodal");
+closemodal.addEventListener("click", () => {
+  document.querySelector(".modal-background").classList.add("hide");
+});
+  
