@@ -116,7 +116,6 @@ function showDetails(data) {
 
   } else {
     modal.querySelector("iframe").style.display = "none";
-
   }
 
 
