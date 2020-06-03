@@ -58,14 +58,14 @@ function blog()
     copy.querySelector(".postname").textContent = blog.title.rendered;
     copy.querySelector(".postdate").innerHTML = blog.modified;
     copy.querySelector(".posttext").innerHTML = blog.content.rendered;
-    document.querySelector("main .postcontainer").appendChild(copy);
+    document.querySelector("main .postscontainer").appendChild(copy);
 
 
 
   }
 }
 
-
+function portfolio() {
 
 
 const modal = document.querySelector(".modal-background");
@@ -161,4 +161,4 @@ function showDetails(data) {
 closemodal.addEventListener("click", () => {
   document.querySelector(".modal-background").classList.add("hide");
 });
-  
+}
