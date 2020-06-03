@@ -562,3 +562,29 @@ padding-right: 15vw;
   }
 }
 
+.aboutme img {
+  max-width: 50%;
+  padding:1em
+}
+
+
+.positionyoutubeabout {
+  /* padding-left: 15vw;
+  padding-right: 15vw; */
+  }
+  .youtubeabout {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 70% 30%;
+  }
+  
+  .youtubeabout iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
