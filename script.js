@@ -109,7 +109,7 @@ function showDetails(data) {
 
   modal.querySelector(".modal-name").textContent = data.title.rendered;
   modal.querySelector(".projectdescription").innerHTML = data.content.rendered;
-
+  modal.querySelector(".projectdate").innerHTML = data.projectdate;
 
   if (data.client_name) {
     modal.querySelector(".client_name").textContent = "Client: " +  data.client_name;

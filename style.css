@@ -278,143 +278,6 @@ button {
 
 }
 
-/* Making fonts responsive */
-
-* {
-  /*font-size: calc(0.1em + 1vw);*/
-}
-
-/* Breakpoints */
-
-@media only screen and (max-width: 1200px) {
-
-
-    * {
-        
-        /*font-size: calc(0.3em + 1vw);*/
-    }
-    .postscontainer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .thissetsthepositionofblog {
-        max-width: 50vw;
-        min-width: 33VW;
-    }
-    
-}
-
-@media only screen and (max-width: 1000px) {
-  * {
-
-    /*font-size: calc(0.4em + 1vw);*/
-  }
-
-}
-
-@media only screen and (max-width: 800px) {
-  * {
-    font-size: calc(0.5em + 1vw);
-  }
-    .postscontainer {
-        grid-template-columns: 1fr;
-    }
-
-    .thissetsthepositionofblog {
-        max-width: 100vw;
-        min-width: 50VW;
-    }
-
-  .sidebar {
-    position: absolute;
-    top: 70%;
-    left: 0px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: row;
-    border-radius: 25px;
-    justify-content: space-around;
-    background-color: var(--background1);
-  }
-
-  .sidebar img {
-    padding: 0vh;
-    width: 3em;
-    height: 3em;
-  }
-
-  .logohomepage {
-    top: 50%;
-  }
-
-
-  .navigation {
-    padding-top: 0vh;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 160%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    color: white;
-    text-decoration: none;
-
-  }
-
-  .navigation a {
-    padding-bottom: 1em;
-    padding-top: 1.5em;
-  }
-}
-
-
-@media only screen and (max-width: 550px) {
-  * {
-    font-size: calc(0.5em + 1vw);
-  }
-
-  div,
-  p,
-  div a,
-  p a,
-  b {
-    font-size: calc(0.8em + 1vw);
-  }
-}
-
-/* Breakpoint for mobile phones in landscape orientation */
-
-@media only screen and (max-device-width: 900px) and (orientation: landscape) {
-  .navigation {
-    flex-direction: row;
-  }
-
-  .navigation a {
-    padding: 0.5em
-  }
-
-  .logohomepage {
-    top: 45%;
-  }
-
-  .sidebar {
-    position: absolute;
-    top: 70%;
-    left: 1px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: row;
-    border-radius: 25px;
-    justify-content: space-around;
-    background-color: var(--background1);
-  }
-
-  .sidebar img {
-    width: 4em;
-    height: 4em;
-  }
-}
-
 .portfoliostuff {
   display: flex;
   flex-direction: row;
@@ -529,4 +392,161 @@ padding-right: 15vw;
   height: 40px;
   border-radius: 5px;
 }
+
+
+/* Making fonts responsive */
+
+* {
+  font-size: calc(0.1em + 1vw);
 }
+
+/* Breakpoints */
+
+@media only screen and (max-width: 1200px) {
+
+
+    * {
+        
+        /*font-size: calc(0.3em + 1vw);*/
+    }
+    .postscontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thissetsthepositionofblog {
+        max-width: 50vw;
+        min-width: 33VW;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+  * {
+
+    font-size: calc(0.4em + 1vw);
+  }
+
+}
+@media only screen and (max-width: 950px) {
+
+  .modal-gallery  {
+
+    justify-content: center;
+  }
+
+.modal-gallery img {
+  padding: 1em;
+  width: 80%;
+  object-fit: cover;
+}
+
+.positionyoutube {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  * {
+    font-size: calc(0.5em + 1vw);
+  }
+    .postscontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .thissetsthepositionofblog {
+        max-width: 100vw;
+        min-width: 50VW;
+    }
+
+  .sidebar {
+    position: absolute;
+    top: 70%;
+    left: 0px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    justify-content: space-around;
+    background-color: var(--background1);
+  }
+
+  .sidebar img {
+    padding: 0vh;
+    width: 3em;
+    height: 3em;
+  }
+
+  .logohomepage {
+    top: 50%;
+  }
+
+
+  .navigation {
+    padding-top: 0vh;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 160%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  .navigation a {
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  * {
+    font-size: calc(0.5em + 1vw);
+  }
+
+  div,
+  p,
+  div a,
+  p a,
+  b {
+    font-size: calc(0.8em + 1vw);
+  }
+}
+
+/* Breakpoint for mobile phones in landscape orientation */
+
+@media only screen and (max-device-width: 900px) and (orientation: landscape) {
+  .navigation {
+    flex-direction: row;
+  }
+
+  .navigation a {
+    padding: 0.5em
+  }
+
+  .logohomepage {
+    top: 45%;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 70%;
+    left: 1px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    justify-content: space-around;
+    background-color: var(--background1);
+  }
+
+  .sidebar img {
+    width: 4em;
+    height: 4em;
+  }
+}
+
