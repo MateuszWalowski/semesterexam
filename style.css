@@ -327,7 +327,8 @@ font-family: 'Inconsolata', monospace;
 }
 .modal-background {
   position: fixed;
-  overflow: scroll;
+  overflow-y: scroll;
+
 
   z-index: 10;
   left: 0;
@@ -337,11 +338,15 @@ font-family: 'Inconsolata', monospace;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .modal-content {
-  overflow: scroll;
   background-color: #fefefe;
   border: 1px solid #7c1f17;
   margin: 1em;
   padding: 2em;
+}
+
+.projectdescription {
+max-width: 100%;
+word-wrap: break-word;
 }
 
 .modal-gallery {
@@ -391,6 +396,7 @@ padding-right: 15vw;
   height: 40px;
   border-radius: 5px;
 }
+
 
 
 /* Making fonts responsive */
